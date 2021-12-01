@@ -6,7 +6,6 @@
 -- All you need is window functions and a sum for aggregation
 
 -- Part 1 requires one to get the diff from the previous value a first_value or last_value window function is perfect for this case
--- Since the test input is rather long I will be using the example input
 select sum(case when diffs > 0 then 1 else 0 end) as incs
 from
 (
